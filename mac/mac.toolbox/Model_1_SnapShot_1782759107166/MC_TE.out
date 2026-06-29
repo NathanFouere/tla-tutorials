@@ -1,0 +1,192 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 47 and seed 5857173246252445253 with 6 workers on 12 cores with 2352MB heap and 5288MB offheap memory [pid: 13845] (Linux 6.18.33 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/nathanf/Documents/Projets/tla-tutorials/mac/mac.toolbox/Model_1/MC.tla
+Parsing file /home/nathanf/Documents/Projets/tla-tutorials/mac/mac.toolbox/Model_1/mac.tla
+Parsing file /nix/store/sgwg9cx24q5m7bn9ikhz4ad5gvacary2-tlaplus-toolbox-1.7.4/libexec/toolbox/plugins/org.lamport.tlatools_1.0.0.202408081326/tla2sany/StandardModules/TLC.tla
+Parsing file /nix/store/sgwg9cx24q5m7bn9ikhz4ad5gvacary2-tlaplus-toolbox-1.7.4/libexec/toolbox/plugins/org.lamport.tlatools_1.0.0.202408081326/tla2sany/StandardModules/Integers.tla
+Parsing file /nix/store/sgwg9cx24q5m7bn9ikhz4ad5gvacary2-tlaplus-toolbox-1.7.4/libexec/toolbox/plugins/org.lamport.tlatools_1.0.0.202408081326/tla2sany/StandardModules/Naturals.tla
+Parsing file /nix/store/sgwg9cx24q5m7bn9ikhz4ad5gvacary2-tlaplus-toolbox-1.7.4/libexec/toolbox/plugins/org.lamport.tlatools_1.0.0.202408081326/tla2sany/StandardModules/Sequences.tla
+Parsing file /nix/store/sgwg9cx24q5m7bn9ikhz4ad5gvacary2-tlaplus-toolbox-1.7.4/libexec/toolbox/plugins/org.lamport.tlatools_1.0.0.202408081326/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Integers
+Semantic processing of module mac
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2026-06-29 20:51:45)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2026-06-29 20:51:45.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 1000:1 @!@!@
+TLC threw an unexpected exception.
+This was probably caused by an error in the spec or model.
+See the User Output or TLC Console for clues to what happened.
+The exception was a java.lang.RuntimeException
+: @!@!@STARTMSG 2247:0 @!@!@
+In computing next states, TLC expected a boolean expression,
+but instead found 0.
+line 97, col 152 to line 97, col 167 of module mac
+@!@!@ENDMSG 2247 @!@!@
+@!@!@ENDMSG 1000 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ BoatStartPos = TRUE
+/\ NB_CANNIBALS_START = 3
+/\ NB_MISSIONARIES_START = 3
+/\ pc = "CROSS"
+/\ NB_MISSIONARIES_END = 0
+/\ NB_CANNIBALS_END = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 93, column 10 to line 111, column 25 in mac
+1. Line 93, column 13 to line 93, column 24 in mac
+2. Line 94, column 13 to line 110, column 43 in mac
+3. Line 95, column 21 to line 102, column 44 in mac
+4. Line 95, column 24 to line 101, column 70 in mac
+5. Line 96, column 26 to line 101, column 70 in mac
+6. Line 97, column 28 to line 101, column 70 in mac
+7. Line 97, column 31 to line 97, column 168 in mac
+8. Line 97, column 31 to line 97, column 112 in mac
+9. Line 97, column 31 to line 97, column 54 in mac
+10. Line 97, column 31 to line 97, column 40 in mac
+11. Line 97, column 45 to line 97, column 54 in mac
+12. Line 97, column 60 to line 97, column 111 in mac
+13. Line 97, column 60 to line 97, column 89 in mac
+14. Line 97, column 119 to line 97, column 167 in mac
+15. Line 97, column 152 to line 97, column 167 in mac
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2026-06-29 20:51:45
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 85, col 1 to line 85, col 4 of module mac>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 9 to line 91, col 23 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CROSS line 93, col 1 to line 93, col 5 of module mac>: 1:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 13 to line 93, col 24 of module mac: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 16 to line 94, col 27 of module mac: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 31 to line 97, col 40 of module mac: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 45 to line 97, col 54 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 60 to line 97, col 111 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 119 to line 97, col 167 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 31 to line 98, col 80 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 31 to line 99, col 76 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 31 to line 100, col 74 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 31 to line 101, col 70 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 35 to line 96, col 63 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 33 to line 95, col 64 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 102, col 24 to line 102, col 44 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 31 to line 105, col 40 of module mac: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 45 to line 105, col 54 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 60 to line 105, col 111 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 119 to line 105, col 167 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 31 to line 106, col 76 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 31 to line 107, col 80 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 31 to line 108, col 70 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 31 to line 109, col 74 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 35 to line 104, col 61 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 33 to line 103, col 62 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 110, col 24 to line 110, col 43 of module mac: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 13 to line 111, col 25 of module mac: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 114, col 1 to line 114, col 11 of module mac>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 31 to line 114, col 44 of module mac: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv_178275910515619000 line 5, col 1 to line 5, col 22 of module MC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 1 to line 6, col 14 of module MC: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(2) at 2026-06-29 20:51:45: 3 states generated (286 s/min), 2 distinct states found (190 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+3 states generated, 2 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 632ms at (2026-06-29 20:51:45)
+@!@!@ENDMSG 2186 @!@!@
